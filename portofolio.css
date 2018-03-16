@@ -1,0 +1,884 @@
+.author-side{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #347B98;
+    height: 80px;
+}
+.auth{
+    font-size: 20px;
+    font-weight: bold;
+    color: #110934;
+    
+}
+.undercosnstruction{
+    color:white;
+}
+
+.name{
+    font-size: 15px;
+    font-weight: bold;
+    color:#110934;
+
+}
+.type{
+    font-size: 14px;
+    font-style: italic;
+    color:#d4d1e2;
+}
+.porto-title{
+    margin: 5px;
+    font-size: 25px;
+    color:#110934;
+
+}
+.star{
+    display: none;
+}
+
+.line{
+    width: 30%;
+    height: 5px;
+    background-color: #110934;
+    margin:0px 20px;
+}
+.fa-star{
+    color: #110934;
+}
+@media(min-width:768px){
+    .author-side{
+        height: 250px;
+    }
+    .auth{
+        font-size: 45px;   
+    }
+    .name{
+        font-size: 40px;
+    
+    }
+    .type{
+        font-size: 30px;
+    }
+ 
+    .porto-title{
+        margin: 20px;
+        font-size: 60px;
+  
+    }
+    .star{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* PROJECT MAIN */
+
+.project-main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+
+@media(min-width:768px){
+    .project-main{
+        flex-direction: row;
+        justify-content:space-around;
+    
+    }
+}
+/* PROJECT IMAGE OVERLY */
+.search-sign{
+    transition: opacity .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(20, 2, 88);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+
+    
+}
+.project-item{
+    position: relative;
+    
+    width: 85%;
+}
+@media(min-width:768px){
+    .project-item{
+        
+        width: 25%;
+    }
+}
+.logo-portofolio{
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 6px 15px 0 #949292, 0 6px 25px 0 #c0bdbd; 
+    
+}
+.logo-portofolio-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity .7s ease-in-out;
+    backface-visibility: hidden;
+}
+.project-item:hover .logo-portofolio-img{
+ opacity: 0.5;
+ cursor: pointer;
+
+}
+.project-item:hover .search-sign{
+    opacity: 1;
+    cursor: pointer;
+}
+/* LIGHT-BOX */
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding:10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(10, 10, 10, 0.95);
+    text-align: center;
+    
+    
+
+}
+
+.close-cursor{
+    color: rgb(207, 188, 188); 
+    font-size: 30px;
+    text-align: right;
+    margin-right: 20px;
+    
+}
+@media(min-width:768px){
+    .close-cursor{font-size: 60px;}
+}
+.close-cursor:hover{
+    cursor: pointer;
+}
+
+.project-name,.project-description{
+    color: rgb(192, 189, 189);
+    
+}
+strong{
+    color:rgb(223, 221, 221)
+}
+.project-name{
+    font-size: 20px;
+    margin:5px  auto;
+    
+}
+@media(min-width:768px){
+    .project-name{
+        font-size: 30px;
+        margin: 10px  auto;
+        font-weight: bold;
+    }
+}
+.star-project{
+    display:none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 10px auto;
+   
+}
+@media(min-width:768px){
+    .star-project{
+        display: flex;
+    }
+}
+.star-project .fa-star{
+    color:rgb(204, 197, 197)
+}
+.star-project .line{
+    width: 20%;
+    height: 2px;
+    background-color:rgb(204, 197, 197);
+
+}
+.project-description{
+    width: 95%;
+    margin: 5px auto;
+    font-size: 14px;
+}
+.see-more{
+    font-size: 14px;
+    text-decoration: none;
+    color:rgb(4, 4, 197);
+    font-family:Georgia, serif;
+}
+.see-less{
+    font-size: 14px;
+    text-decoration: none;
+    color:rgb(4, 4, 197);
+    font-family:Georgia, serif;
+}
+.colapsed{
+    display: none;
+}
+@media(min-width:768px){
+    .project-description{
+        width: 70%;
+        margin: 25px auto;
+        font-size: 18px;
+    } 
+    .see-more{
+        font-size: 18px;
+        
+    }
+    .see-less{
+        font-size: 18px;
+    }
+}
+.close-button{
+    margin: 20px auto;
+    width: 45%;
+    height: 40px;
+    color: rgb(204, 197, 197);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#0A3409;
+    box-shadow: 0 6px 15px 0 #080808, 0 6px 25px 0 #111111; 
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0.7;
+    
+
+}
+@media(min-width:1000px){
+    .close-button{
+        width: 20%;
+        height: 42px;
+        font-size: 18px;
+        
+    }
+}
+@media(min-width:1200px){
+    .close-button{
+        width: 12%;
+        height: 42px;
+        font-size: 18px;
+        
+    }
+}
+.close-button:hover{
+    opacity: 1;
+}
+/* CARUSEL */
+.caruselContent{
+    margin: 20px auto;
+    position: relative;
+    width: 65%;
+    height:auto;
+}
+
+.jcarousel {
+    margin:20px auto;
+    width:95%;
+    height:auto;
+    position: relative;
+    overflow:hidden;
+    box-shadow: 0 6px 15px 0 #080808, 0 6px 25px 0 #111111; 
+}
+@media(min-width:768px){
+    .jcarousel {
+       
+        width:70%;
+        
+    } 
+}
+@media(min-width:1100px){
+    .jcarousel {
+       
+        width:58%;
+        
+    } 
+}
+.jcarousel-list{
+    width:20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel-item{
+   
+    float: left;
+}
+.jcarousel img{
+    width: 100%;
+    height: auto;
+    
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 70px;
+    width: 15px;
+    height: 30px;
+    color: rgb(39, 38, 38);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+  
+   
+}
+
+ .jcarousel-control-prev {
+    left: 0px;
+}
+
+.jcarousel-control-next {
+    right: 0px;
+} 
+@media(min-width:400px){
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+       
+        top: 110px;
+     
+    }
+}
+@media(min-width:768px){
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+        position: absolute;
+        top: 160px;
+        width: 15px;
+        height: 35px;
+        font-size: 55px;
+        transition: width 0.6s;
+}
+
+.jcarousel-control-prev:hover ,
+.jcarousel-control-next:hover  {
+    background: #4E443C;
+    color: #fff;
+    box-shadow: 0 0 2px #999;
+    opacity: 0.8;
+    width: 35px;
+   
+}
+
+}
+
+@media(min-width:1100px){
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+        position: absolute;
+        top: 150px;
+        
+}
+}  
+@media(min-width:1260px){
+    .jcarousel-control-prev,
+    .jcarousel-control-next {
+        position: absolute;
+        top: 200px;
+}
+} 
+   
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 7px;
+    left:40%;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 7px;
+    line-height: 14px;
+    min-width: 12px;
+    min-height: 10px;
+    background: rgb(129, 124, 124);
+    color: #4E443C;
+    border-radius:10px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+@media(min-width:768px){
+    .jcarousel-pagination {
+        position: absolute;
+        bottom:10px;
+        left:45%;
+        
+        
+    }
+
+    .jcarousel-pagination a {
+     
+        font-size: 0px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        margin-right: 1px;
+        border-radius: 20px;
+        opacity: .65;
+    }
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+/* WEATHER-CONTENT */
+
+.weather-content{
+    width: 95%;
+    height: auto;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+@media(min-width:768px){
+    .weather-content{
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+.sticki-note{
+    width: 42%;
+    height: 47px;
+    background-color: rgb(218, 214, 214);
+    opacity: 0.7;
+    margin-top: 7px;
+    position: relative;
+    top:20px;
+    z-index: 1;
+
+}
+.weather-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 10px 10px 10px;
+    height:auto;
+    background-color: rgb(189, 189, 3);
+    box-shadow: 0 10px 20px 0 #080808, 0 10px 30px 0 #111111;
+    font-style: italic;
+    font-size: 16px;
+    
+}
+@media(min-width:768px){
+    .weather-description{
+        width: 75%;
+        font-size: 20px;
+    }
+}
+.date{
+    margin: 10px 0px;
+    font-weight: bold;
+
+}
+#weatherbtn{
+    margin: 20px;
+    width: 70%;
+    height: 40px;
+    color: rgb(204, 197, 197);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#0A3409;
+    box-shadow: 0 6px 15px 0 #080808, 0 6px 25px 0 #111111; 
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.9;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#weatherbtn:hover{
+    opacity: 1;
+}
+
+
+#weatherotherLocationbtn{
+    margin: 15px;
+    width: 70%;
+    height: 40px;
+    color: rgb(204, 197, 197);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#0A3409;
+    box-shadow: 0 6px 15px 0 #080808, 0 6px 25px 0 #111111; 
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 0.9;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+
+#weatherotherLocationbtn:hover{
+    opacity: 1;
+}
+@media(min-width:768px){
+    #weatherbtn{
+        width: 55%;
+        font-size: 15px;
+    }
+    #weatherotherLocationbtn{
+        width: 55%;
+        font-size: 15;
+    }
+    
+    }
+@media(min-width:1024px){
+    #weatherbtn{
+        width: 30%;
+        font-size: 15px;
+    }
+    #weatherotherLocationbtn{
+        width: 40%;
+        font-size: 15;
+    }
+    
+    }
+
+.weatherOtherLocation{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.otherLocation{
+    margin: 10px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formdiv{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+input[name="regionnweather"]{
+    width: 90%;
+    height: 42px;
+    font-size: 17px;
+    color:rgb(3, 82, 3);
+    background-color: rgb(220, 241, 160);
+    margin:  1px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 0px solid;
+}
+@media(min-width:450px){
+    .input[name="regionnweather"]{
+        width: 70%;
+    }
+}
+@media(min-width:768px){
+    .formdiv{
+        width: 50%;
+    }
+    .input[name="regionnweather"]{
+        width: 90%;
+    }
+}
+.displayWeather{
+    position: relative;
+    width: 95%;
+    margin: 10px;
+    
+}
+
+
+.locationName{
+    font-size: 16px;
+    font-weight: bold;
+}
+@media(min-width:500px){
+    .displayWeather{
+        width: 70%
+    }
+}
+@media(min-width:768px){
+    .displayWeather{
+        width: 85%;
+        margin: 20px;
+        
+    }
+
+    .locationName{
+        font-size: 18px;
+        
+    }
+}
+.temperature{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0px auto;
+    background-color: rgb(220, 241, 160);
+   
+
+}
+.temperature p{
+    font-size: 17px;
+    margin: 5px 0px;
+}
+.spinner{
+   
+    margin: 0 auto;
+}
+
+ .bounce1, .bounce2 ,.bounce3,
+ .bounce4,.bounce5,.bounce6 {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(3, 83, 10);
+    margin: 2px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+   .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .bounce2 {
+    -webkit-animation-delay: -0.22s;
+    animation-delay: -0.22s;
+  }
+  .bounce3 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  .bounce4 {
+    -webkit-animation-delay: -0.12s;
+    animation-delay: -0.12s;
+  }
+  .bounce5 {
+    -webkit-animation-delay: -0.08s;
+    animation-delay: -0.08s;
+  }
+  .bounce6 {
+    -webkit-animation-delay: -0.04s;
+    animation-delay: -0.04s;
+  }
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+@media(min-width:768px){
+    .temperature p{
+        font-size: 20px;
+        margin: 5px 0px;
+    }
+}
+
+.weatherinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(min-width:1024px){
+    .weatherinfo{
+        width: 100%;
+        flex-direction: row;
+        
+    }
+}
+.imgandtemperature{
+    margin: 15px 0px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    
+}
+
+.otherInfo{
+    margin: 15px 0px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+@media(min-width:1024px){
+    .imgandtemperature{
+        width: 60%;
+        height: 100px;
+    }
+    .otherInfo{
+        width: 40%;
+        height: 100px;
+    }
+}
+.weatherimg img{
+width: 100%;
+height: auto;
+}
+.weatherimg{
+   
+    width: 25%;
+    text-align: center;
+    margin: 0px 7px;
+}
+.grads{
+    width: 41%;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 3px;
+}
+
+.f{
+    display:none;
+}
+.fshow{
+    display: block;
+}
+.chide{
+    display: none;
+}
+.typeofgrads{
+    width: 16%;
+    font-size: 15px;
+    padding-right: 7px;
+    
+
+}
+@media(min-width:380px){
+    .grads{
+        width: 40%;
+        font-size: 45px;
+        
+    }
+    .typeofgrads{
+        width: 16%;
+        font-size: 20px;
+        padding-right: 7px;
+    }
+  
+}
+@media(min-width:470px){
+    .grads{
+        width: 40%;
+        font-size: 60px;
+        
+    }
+    .typeofgrads{
+        width: 16%;
+        font-size: 30px;
+        padding-right: 7px;
+    }
+  
+}
+.cDeg{
+    border-right: 2px solid rgb(54, 53, 53);
+    cursor: pointer;
+
+}
+.fDeg{
+    color:blue;
+    cursor: pointer;
+    
+}
+.cBlue{
+    color:blue;
+}
+.fBlack{
+    color:black;
+}
+.error{
+    color:red;
+    margin: 0 auto;
+    text-align: center;
+}

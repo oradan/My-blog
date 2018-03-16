@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Portofolio</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <link rel="stylesheet" href="./style.css" type="text/css" />
+                <link rel="stylesheet" href="./portofolio.css" type="text/css" />
+                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://fonts.googleapis.com/css?family=Courgette|Jacques+Francois+Shadow" rel="stylesheet">
+        
+        </head>
+        <body>
+                <header> 
+                        <div class="nav-bar">
+                                <div class="logo">Radan Olga</div>
+                                <div class="nav-link">
+                                        <a href="index.html">Home</a>
+                                        <a href="about.html" >About</a>
+                                        <a href="portofolio.html" >Portofolio</a>
+                                        <a href="#footer" >Contact</a>
+                                </div>
+                        </div>
+                        <div class="author-side">
+                                <div class="auth">Author</div>
+                                <div class="name">Radan Olga</div>
+                                
+                                <p class="type">I'm <span class="typer"></span></p>
+                        </div>
+                </header>
+                
+                <div class="container">
+                                
+                        <h3 class="porto-title">Portofolio</h3>
+                        <div class="star">
+                                <div class="line"></div>
+                                <i class="far fa-star fa-3x"></i>
+                                <div class="line"></div>
+              
+                        </div>
+
+                        <div class="project-main">
+                                <div class="project-item">
+                                        <div class="logo-portofolio">
+                                                <img class="logo-portofolio-img"src=".\resorces\logo-carusel.jpg"></img>
+                                        </div>
+                                        <!-- <div class="search-sign"><i class="fas fa-search fa-3x"></i></div> -->
+                                        <div class="search-sign">Carousel</i></div>
+                                        <div class="lightbox ">
+                                                <p class="close-cursor" id="close-btn">&times;</p>
+                                        
+                                                <div class="project-name">Carousel</div>
+                                                <div class="star-project">
+                                                                <div class="line"></div>
+                                                                <i class="far fa-star fa-2x"></i>
+                                                                <div class="line"></div>
+                                                                
+                                                </div>
+                                                <div class="caruselContent">
+                                                        <div class="jcarousel">
+                                                                <ul class="jcarousel-list">
+                                                                        <li class="jcarousel-item"><img src=".\resorces\carusel1bg.jpg" ></img></li>
+                                                                        <li class="jcarousel-item"><img src=".\resorces\carusel7bg.jpg" ></img></li>
+                                                                        <li class="jcarousel-item"><img src=".\resorces\carusel9bg.jpg" ></img></li>
+                                                                        <li class="jcarousel-item"><img src=".\resorces\carusel10bg.jpg" ></img></li>
+                                                                        <li class="jcarousel-item"><img src=".\resorces\carusel11bg.jpg" ></img></li>
+                                                                </ul>
+                                                                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                                                                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                                                        </div>
+                                                        <p class="jcarousel-pagination"></p> 
+                                                </div>
+                                                <div class="project-description">
+                                                        <div class="visible"> 
+                                                                Developing a <strong>Carousel</strong> having an exquisite design but still user friendly, has 
+                                                                been and remains a challenge. When I decided to create a Carousel, I was quite puzzled: should I encode 
+                                                                the application from A to Z by myself or to use a plugin offered by any library. I solved the dilemma by 
+                                                                talking with my trainer who told me &nbsp; <a class ="see-more" href="#">....see more</a>
+                                                        </div>
+                                                        <div class="colapsed">
+                                                                that it's ok to use everything a library offers.
+                                                                Therefore, I used the <strong>jQuery Carousel Plugin</strong> and added my personal contribution: styling, layout and 
+                                                                <strong>LightBox Effect.</strong> This is just a prototype yet to be improved, Carousel still remains on my "to do" list. &nbsp;&nbsp; <a class ="see-less" href="#">....see less</a>
+                                                        </div>
+                                                </div>
+                                                <div class="close-button">Close Project</div>
+                                
+                                        </div>
+                                </div>
+
+                                <div class="project-item">
+                                        <div class="logo-portofolio">
+                                                <img class="logo-portofolio-img"src=".\resorces\weather1.png"></img>
+                                        </div>
+                                        <div class="search-sign">Get Weather</i></div>
+                                        <div class="lightbox ">
+                                                <p class="close-cursor" id="close-btn">&times;</p>
+                                        
+                                                <div class="project-name">Get weather</div>
+                                                <div class="star-project">
+                                                                <div class="line"></div>
+                                                                <i class="far fa-star fa-2x"></i>
+                                                                <div class="line"></div>
+                                                                
+                                                </div>
+                                                <div class="weather-content">
+                                                        <div class="sticki-note"></div>
+                                                        <div class="weather-description"></div>
+                                                
+
+                                                </div>
+                                                        
+                                                <div class="project-description">
+                                                        <div class="visible">
+                                                                For the "Get Weather" project, I used the information provided on Weather Underground by making a 
+                                                                request to the <strong>weather API</strong>. The user has two possibilities to find the local Weather or to know the weather 
+                                                                in any other city. To find the current location I used the <strong>geolocation API</strong>. Since the answer was asynchronous &nbsp; <a class ="see-more" href="#">....see more</a>&nbsp; 
+                                                        </div>
+                                                        <div class="colapsed">
+                                                                I wrapped it in a <strong>Promise</strong>. To check the weather in other cities the user must fill the Country, Region and Location inputs, 
+                                                                but it is not mandatory to fill them all. The parameter values for location accepted by Weather API are only the country and location.
+                                                                If there are several places with the same name, weather API does not provide us with the data needed but provide us in response those locations. 
+                                                                To solve this problem I decided, in the weather API URL, for the value of the location parameter to use the geographical position of 
+                                                                the one entered. To get latitude and longitude of the desired town I made a call to the <strong>Google Maps Geocoding API</strong> that provides the 
+                                                                geographic position of the town entered by the user in related fields. This value, saved in a variable, I pass to the weather API URL,
+                                                                by chaining this call (weather APY call) with Google Maps Geocoding API call. In this way, the user gets the exact weather information for the desired location. &nbsp;&nbsp; <a class ="see-less" href="#">....see less</a>
+                                                                        
+                                                        </div>
+                                                </div>
+                                                <div class="close-button">Close Project</div>
+                                        
+                                        </div>
+                                </div>
+                                <div class="project-item">
+                                        <div class="logo-portofolio">
+                                                <img class="logo-portofolio-img"src=".\resorces\news.png"></img>
+                                        </div>
+                                        <div class="search-sign"><i class="fas fa-search fa-3x"></i></div>
+                                        <div class="lightbox ">
+                                                <p class="close-cursor" id="close-btn">&times;</p>
+                                        
+                                                        <div class="project-name">Get CNN News</div>
+                                                        <div class="star-project">
+                                                                        <div class="line"></div>
+                                                                        <i class="far fa-star fa-2x"></i>
+                                                                        <div class="line"></div>
+                                                                        
+                                                        </div>
+
+                                                        <h1 class="undercosnstruction">Steel under construction</h1>
+                                                        
+                                                        <div class="project-description"> Welcome to my website. Lorem ipsum dolor sit amet, 
+                                                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                                                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                                                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        </div>
+                                                        <div class="close-button">Close Project</div>
+                                                
+                                        </div>
+                                </div>
+                                
+                        </div>
+                                
+                </div>
+
+
+                
+                        
+                
+                <footer id="footer">
+                        <div class="footer-contacticons">
+                                <p> <i class="far fa-address-book fa-lg"></i> Buna Ziua nr 12 Cluj-Napoca</p>
+                                <p> <i class="fas fa-mobile fa-lg"></i> 0733959635</p>
+                                <p> <i class="far fa-envelope fa-lg"></i> plotnica@yahoo.com</p>
+                        </div>
+                        <div class="footer-nav-link">
+                                <a href="index.html">Home</a>
+                                <a href="about.html" target="_blank">About</a>
+                                <a href="portofolio.html" target="_blank">Portofolio</a>
+                                <a href="#" target="_blank">Contact</a>
+                
+                        </div>
+        
+        
+                </footer>
+        
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+                <script type="text/javascript" src=".\carusellibrary.js"></script>
+                <script type="text/javascript" src=".\portofolio.js"></script>
+                <script type="text/javascript" src=".\mychalange.js"></script>
+                <script type="text/javascript" src=".\fliplibrary.js"></script>
+        
+        
+                
+        </body>
+</html>

@@ -1,0 +1,247 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src=".\fliplibrary.js"></script>
+    <title>jQuery plugin</title>
+    <style type="text/css">
+      body {
+        margin: 0 100px;
+      }
+      .container{
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+
+      }
+      .card {
+        width: 20%;
+        height: 100px;
+        margin: 20px;
+        display: inline-block;
+       
+        text-align: center;
+        /* padding: 20px; */
+        /* font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+
+      }
+    
+      
+      .front, .back {
+        border: 2px gray solid;
+        padding: 10px;
+      }
+      .front {
+        background-color: #ccc;
+      }
+      .back {
+        background-color: red;
+      }
+
+      #card{
+        width: 50%;
+        height: 100px;
+        margin: 20px;
+        display: inline-block;
+
+      }
+      .front1{
+        width:100px;
+        /* border: 2px gray solid; */
+        padding: 10px;
+        background-color: rgb(172, 49, 49);
+          
+      }
+      .back1{
+        width:300px;
+        /* border: 2px gray solid; */
+        padding: 10px;
+        background-color: rgb(63, 35, 161);
+      }
+      #demo{
+        background-image: url('./resorces/22.jpg');
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;  
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+    <div id="card-1" class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div>
+    </div>
+
+    <div id="card-2" class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="front">
+          Front
+      </div>
+      <div class="back">
+          Back
+      </div> 
+    </div>
+
+    <div  id="card">
+        <div class="front1">
+            Front
+        </div>
+        <div class="back1">
+            Back
+        </div> 
+      </div>
+    </div>
+    <h1>Typewriter</h1>
+    
+    <button onclick="typeWriter()">Click me</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var i = 0;
+    var txt = 'Lorem ipsum dummy text blabla.';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        console.log(document.getElementById("demo"))
+        console.log(i)
+      }
+    }
+    </script>
+
+    <script type="text/javascript">
+    $(function(){
+      $(".card").flip({
+        trigger: "hover"
+      });
+      console.log("1")
+      $("#card").flip({
+        trigger: "hover",
+        front: $('.front1'),
+        back: $('.back1'),
+       
+      });
+      console.log("2")
+    });
+    </script>
+  </body>
+</html>
